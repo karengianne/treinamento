@@ -1,0 +1,530 @@
+2015-04-17 10:17:41 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-04-17 10:17:41 INFO  Environment:593 - Hibernate 3.6.0.Final
+2015-04-17 10:17:41 INFO  Environment:626 - hibernate.properties not found
+2015-04-17 10:17:41 INFO  Environment:804 - Bytecode provider name : javassist
+2015-04-17 10:17:41 INFO  Environment:685 - using JDK 1.4 java.sql.Timestamp handling
+2015-04-17 10:17:42 INFO  Version:42 - Hibernate EntityManager 3.6.0.Final
+2015-04-17 10:17:42 INFO  Ejb3Configuration:308 - Could not find any META-INF/persistence.xml file in the classpath
+2015-04-17 10:20:01 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-04-17 10:20:01 INFO  Environment:593 - Hibernate 3.6.0.Final
+2015-04-17 10:20:01 INFO  Environment:626 - hibernate.properties not found
+2015-04-17 10:20:01 INFO  Environment:804 - Bytecode provider name : javassist
+2015-04-17 10:20:01 INFO  Environment:685 - using JDK 1.4 java.sql.Timestamp handling
+2015-04-17 10:20:01 INFO  Version:42 - Hibernate EntityManager 3.6.0.Final
+2015-04-17 10:20:01 INFO  AnnotationBinder:532 - Binding entity from annotated class: Entidades.Conta
+2015-04-17 10:20:01 INFO  EntityBinder:519 - Bind entity Entidades.Conta on table Conta
+2015-04-17 10:20:01 INFO  Configuration:1646 - Hibernate Validator not found: ignoring
+2015-04-17 10:20:01 INFO  Version:56 - Hibernate Validator 4.0.2.GA
+2015-04-17 10:20:01 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:20:01 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:20:01 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:20:01 INFO  HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-04-17 10:20:01 INFO  DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+2015-04-17 10:20:01 INFO  DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+2015-04-17 10:20:01 INFO  DriverManagerConnectionProvider:68 - autocommit mode: true
+2015-04-17 10:20:01 INFO  DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/fj25
+2015-04-17 10:20:01 INFO  DriverManagerConnectionProvider:109 - connection properties: {user=root, autocommit=true, release_mode=auto}
+2015-04-17 10:20:02 WARN  SettingsFactory:147 - Could not obtain connection to query metadata
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1075)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3566)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3498)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:919)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4004)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1284)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2312)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2122)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:774)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:375)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:289)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:114)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2833)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2829)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1840)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at Teste.teste.main(teste.java:12)
+2015-04-17 10:20:02 INFO  Dialect:108 - Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2015-04-17 10:20:02 INFO  JdbcSupportLoader:70 - Disabling contextual LOB creation as connection was null
+2015-04-17 10:20:02 INFO  TransactionFactoryFactory:62 - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2015-04-17 10:20:02 INFO  TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-04-17 10:20:02 INFO  SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:183 - Automatic session close at end of transaction: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:198 - Scrollable result sets: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:206 - JDBC3 getGeneratedKeys(): disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:214 - Connection release mode: auto
+2015-04-17 10:20:02 INFO  SettingsFactory:238 - Maximum outer join fetch depth: 2
+2015-04-17 10:20:02 INFO  SettingsFactory:241 - Default batch fetch size: 1
+2015-04-17 10:20:02 INFO  SettingsFactory:245 - Generate SQL with comments: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:249 - Order SQL updates by primary key: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:253 - Order SQL inserts for batching: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-04-17 10:20:02 INFO  ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+2015-04-17 10:20:02 INFO  SettingsFactory:261 - Query language substitutions: {}
+2015-04-17 10:20:02 INFO  SettingsFactory:266 - JPA-QL strict compliance: enabled
+2015-04-17 10:20:02 INFO  SettingsFactory:271 - Second-level cache: enabled
+2015-04-17 10:20:02 INFO  SettingsFactory:275 - Query cache: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-04-17 10:20:02 INFO  SettingsFactory:285 - Optimize cache for minimal puts: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:294 - Structured second-level cache entries: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:314 - Echoing all SQL to stdout
+2015-04-17 10:20:02 INFO  SettingsFactory:323 - Statistics: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+2015-04-17 10:20:02 INFO  SettingsFactory:343 - Default entity-mode: pojo
+2015-04-17 10:20:02 INFO  SettingsFactory:347 - Named query checking : enabled
+2015-04-17 10:20:02 INFO  SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015-04-17 10:20:02 INFO  SessionFactoryImpl:200 - building session factory
+2015-04-17 10:20:02 INFO  SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+2015-04-17 10:20:02 INFO  SchemaUpdate:155 - Running hbm2ddl schema update
+2015-04-17 10:20:02 INFO  SchemaUpdate:167 - fetching database metadata
+2015-04-17 10:20:02 ERROR SchemaUpdate:175 - could not get database metadata
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1075)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3566)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3498)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:919)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4004)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1284)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2312)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2122)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:774)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:375)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:289)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:168)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:373)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at Teste.teste.main(teste.java:12)
+2015-04-17 10:20:02 ERROR SchemaUpdate:222 - could not complete schema update
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1075)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3566)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3498)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:919)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4004)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1284)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2312)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2122)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:774)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:375)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:289)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:168)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:373)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at Teste.teste.main(teste.java:12)
+2015-04-17 10:20:02 WARN  JDBCExceptionReporter:233 - SQL Error: 1045, SQLState: 28000
+2015-04-17 10:20:02 ERROR JDBCExceptionReporter:234 - Access denied for user 'root'@'localhost' (using password: NO)
+2015-04-17 10:20:25 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-04-17 10:20:25 INFO  Environment:593 - Hibernate 3.6.0.Final
+2015-04-17 10:20:25 INFO  Environment:626 - hibernate.properties not found
+2015-04-17 10:20:25 INFO  Environment:804 - Bytecode provider name : javassist
+2015-04-17 10:20:25 INFO  Environment:685 - using JDK 1.4 java.sql.Timestamp handling
+2015-04-17 10:20:25 INFO  Version:42 - Hibernate EntityManager 3.6.0.Final
+2015-04-17 10:20:26 INFO  AnnotationBinder:532 - Binding entity from annotated class: Entidades.Conta
+2015-04-17 10:20:26 INFO  EntityBinder:519 - Bind entity Entidades.Conta on table Conta
+2015-04-17 10:20:26 INFO  Configuration:1646 - Hibernate Validator not found: ignoring
+2015-04-17 10:20:26 INFO  Version:56 - Hibernate Validator 4.0.2.GA
+2015-04-17 10:20:26 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:20:26 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:20:26 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:20:26 INFO  HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-04-17 10:20:26 INFO  DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+2015-04-17 10:20:26 INFO  DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+2015-04-17 10:20:26 INFO  DriverManagerConnectionProvider:68 - autocommit mode: true
+2015-04-17 10:20:26 INFO  DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/fj25
+2015-04-17 10:20:26 INFO  DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true, release_mode=auto}
+2015-04-17 10:20:26 WARN  SettingsFactory:147 - Could not obtain connection to query metadata
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'fj25'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.Util.getInstance(Util.java:384)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3566)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3498)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:919)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4004)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1284)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2312)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2122)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:774)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:375)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:289)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:114)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2833)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2829)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1840)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at Teste.teste.main(teste.java:12)
+2015-04-17 10:20:26 INFO  Dialect:108 - Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2015-04-17 10:20:26 INFO  JdbcSupportLoader:70 - Disabling contextual LOB creation as connection was null
+2015-04-17 10:20:26 INFO  TransactionFactoryFactory:62 - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2015-04-17 10:20:26 INFO  TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-04-17 10:20:26 INFO  SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:183 - Automatic session close at end of transaction: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:198 - Scrollable result sets: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:206 - JDBC3 getGeneratedKeys(): disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:214 - Connection release mode: auto
+2015-04-17 10:20:26 INFO  SettingsFactory:238 - Maximum outer join fetch depth: 2
+2015-04-17 10:20:26 INFO  SettingsFactory:241 - Default batch fetch size: 1
+2015-04-17 10:20:26 INFO  SettingsFactory:245 - Generate SQL with comments: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:249 - Order SQL updates by primary key: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:253 - Order SQL inserts for batching: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-04-17 10:20:26 INFO  ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+2015-04-17 10:20:26 INFO  SettingsFactory:261 - Query language substitutions: {}
+2015-04-17 10:20:26 INFO  SettingsFactory:266 - JPA-QL strict compliance: enabled
+2015-04-17 10:20:26 INFO  SettingsFactory:271 - Second-level cache: enabled
+2015-04-17 10:20:26 INFO  SettingsFactory:275 - Query cache: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-04-17 10:20:26 INFO  SettingsFactory:285 - Optimize cache for minimal puts: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:294 - Structured second-level cache entries: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:314 - Echoing all SQL to stdout
+2015-04-17 10:20:26 INFO  SettingsFactory:323 - Statistics: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+2015-04-17 10:20:26 INFO  SettingsFactory:343 - Default entity-mode: pojo
+2015-04-17 10:20:26 INFO  SettingsFactory:347 - Named query checking : enabled
+2015-04-17 10:20:26 INFO  SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015-04-17 10:20:26 INFO  SessionFactoryImpl:200 - building session factory
+2015-04-17 10:20:26 INFO  SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+2015-04-17 10:20:26 INFO  SchemaUpdate:155 - Running hbm2ddl schema update
+2015-04-17 10:20:26 INFO  SchemaUpdate:167 - fetching database metadata
+2015-04-17 10:20:26 ERROR SchemaUpdate:175 - could not get database metadata
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'fj25'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.Util.getInstance(Util.java:384)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3566)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3498)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:919)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4004)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1284)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2312)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2122)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:774)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:375)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:289)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:168)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:373)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at Teste.teste.main(teste.java:12)
+2015-04-17 10:20:26 ERROR SchemaUpdate:222 - could not complete schema update
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'fj25'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.Util.getInstance(Util.java:384)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3566)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3498)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:919)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4004)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1284)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2312)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2122)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:774)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:375)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:289)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:168)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:373)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at Teste.teste.main(teste.java:12)
+2015-04-17 10:20:26 WARN  JDBCExceptionReporter:233 - SQL Error: 1049, SQLState: 42000
+2015-04-17 10:20:26 ERROR JDBCExceptionReporter:234 - Unknown database 'fj25'
+2015-04-17 10:21:36 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-04-17 10:21:36 INFO  Environment:593 - Hibernate 3.6.0.Final
+2015-04-17 10:21:36 INFO  Environment:626 - hibernate.properties not found
+2015-04-17 10:21:36 INFO  Environment:804 - Bytecode provider name : javassist
+2015-04-17 10:21:36 INFO  Environment:685 - using JDK 1.4 java.sql.Timestamp handling
+2015-04-17 10:21:36 INFO  Version:42 - Hibernate EntityManager 3.6.0.Final
+2015-04-17 10:21:36 INFO  AnnotationBinder:532 - Binding entity from annotated class: Entidades.Conta
+2015-04-17 10:21:36 INFO  EntityBinder:519 - Bind entity Entidades.Conta on table Conta
+2015-04-17 10:21:36 INFO  Configuration:1646 - Hibernate Validator not found: ignoring
+2015-04-17 10:21:36 INFO  Version:56 - Hibernate Validator 4.0.2.GA
+2015-04-17 10:21:36 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:21:36 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:21:36 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:21:36 INFO  HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-04-17 10:21:36 INFO  DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+2015-04-17 10:21:36 INFO  DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+2015-04-17 10:21:36 INFO  DriverManagerConnectionProvider:68 - autocommit mode: true
+2015-04-17 10:21:36 INFO  DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/treinamento
+2015-04-17 10:21:36 INFO  DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true, release_mode=auto}
+2015-04-17 10:21:37 INFO  SettingsFactory:117 - Database ->
+       name : MySQL
+    version : 5.5.41-0ubuntu0.14.04.1
+      major : 5
+      minor : 5
+2015-04-17 10:21:37 INFO  SettingsFactory:123 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015-04-17 10:21:37 INFO  Dialect:108 - Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2015-04-17 10:21:37 INFO  JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-04-17 10:21:37 INFO  TransactionFactoryFactory:62 - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2015-04-17 10:21:37 INFO  TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-04-17 10:21:37 INFO  SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:183 - Automatic session close at end of transaction: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:190 - JDBC batch size: 15
+2015-04-17 10:21:37 INFO  SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:198 - Scrollable result sets: enabled
+2015-04-17 10:21:37 INFO  SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+2015-04-17 10:21:37 INFO  SettingsFactory:214 - Connection release mode: auto
+2015-04-17 10:21:37 INFO  SettingsFactory:238 - Maximum outer join fetch depth: 2
+2015-04-17 10:21:37 INFO  SettingsFactory:241 - Default batch fetch size: 1
+2015-04-17 10:21:37 INFO  SettingsFactory:245 - Generate SQL with comments: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:249 - Order SQL updates by primary key: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:253 - Order SQL inserts for batching: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-04-17 10:21:37 INFO  ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+2015-04-17 10:21:37 INFO  SettingsFactory:261 - Query language substitutions: {}
+2015-04-17 10:21:37 INFO  SettingsFactory:266 - JPA-QL strict compliance: enabled
+2015-04-17 10:21:37 INFO  SettingsFactory:271 - Second-level cache: enabled
+2015-04-17 10:21:37 INFO  SettingsFactory:275 - Query cache: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-04-17 10:21:37 INFO  SettingsFactory:285 - Optimize cache for minimal puts: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:294 - Structured second-level cache entries: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:314 - Echoing all SQL to stdout
+2015-04-17 10:21:37 INFO  SettingsFactory:323 - Statistics: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+2015-04-17 10:21:37 INFO  SettingsFactory:343 - Default entity-mode: pojo
+2015-04-17 10:21:37 INFO  SettingsFactory:347 - Named query checking : enabled
+2015-04-17 10:21:37 INFO  SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015-04-17 10:21:37 INFO  SessionFactoryImpl:200 - building session factory
+2015-04-17 10:21:37 INFO  SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+2015-04-17 10:21:37 INFO  SchemaUpdate:155 - Running hbm2ddl schema update
+2015-04-17 10:21:37 INFO  SchemaUpdate:167 - fetching database metadata
+2015-04-17 10:21:37 INFO  SchemaUpdate:179 - updating schema
+2015-04-17 10:21:37 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:21:37 INFO  DatabaseMetadata:119 - table not found: Conta
+2015-04-17 10:21:37 INFO  DatabaseMetadata:119 - table not found: Conta
+2015-04-17 10:21:37 INFO  SchemaUpdate:217 - schema update complete
+2015-04-17 10:24:31 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-04-17 10:24:31 INFO  Environment:593 - Hibernate 3.6.0.Final
+2015-04-17 10:24:31 INFO  Environment:626 - hibernate.properties not found
+2015-04-17 10:24:31 INFO  Environment:804 - Bytecode provider name : javassist
+2015-04-17 10:24:31 INFO  Environment:685 - using JDK 1.4 java.sql.Timestamp handling
+2015-04-17 10:24:31 INFO  Version:42 - Hibernate EntityManager 3.6.0.Final
+2015-04-17 10:24:32 INFO  AnnotationBinder:532 - Binding entity from annotated class: Entidades.Conta
+2015-04-17 10:24:32 INFO  EntityBinder:519 - Bind entity Entidades.Conta on table Conta
+2015-04-17 10:24:32 INFO  Configuration:1646 - Hibernate Validator not found: ignoring
+2015-04-17 10:24:32 INFO  Version:56 - Hibernate Validator 4.0.2.GA
+2015-04-17 10:24:32 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:24:32 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:24:32 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:24:32 INFO  HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-04-17 10:24:32 INFO  DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+2015-04-17 10:24:32 INFO  DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+2015-04-17 10:24:32 INFO  DriverManagerConnectionProvider:68 - autocommit mode: true
+2015-04-17 10:24:32 INFO  DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/treinamento
+2015-04-17 10:24:32 INFO  DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true, release_mode=auto}
+2015-04-17 10:24:32 INFO  SettingsFactory:117 - Database ->
+       name : MySQL
+    version : 5.5.41-0ubuntu0.14.04.1
+      major : 5
+      minor : 5
+2015-04-17 10:24:32 INFO  SettingsFactory:123 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015-04-17 10:24:32 INFO  Dialect:108 - Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2015-04-17 10:24:32 INFO  JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-04-17 10:24:32 INFO  TransactionFactoryFactory:62 - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2015-04-17 10:24:32 INFO  TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-04-17 10:24:32 INFO  SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:183 - Automatic session close at end of transaction: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:190 - JDBC batch size: 15
+2015-04-17 10:24:32 INFO  SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:198 - Scrollable result sets: enabled
+2015-04-17 10:24:32 INFO  SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+2015-04-17 10:24:32 INFO  SettingsFactory:214 - Connection release mode: auto
+2015-04-17 10:24:32 INFO  SettingsFactory:238 - Maximum outer join fetch depth: 2
+2015-04-17 10:24:32 INFO  SettingsFactory:241 - Default batch fetch size: 1
+2015-04-17 10:24:32 INFO  SettingsFactory:245 - Generate SQL with comments: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:249 - Order SQL updates by primary key: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:253 - Order SQL inserts for batching: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-04-17 10:24:32 INFO  ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+2015-04-17 10:24:32 INFO  SettingsFactory:261 - Query language substitutions: {}
+2015-04-17 10:24:32 INFO  SettingsFactory:266 - JPA-QL strict compliance: enabled
+2015-04-17 10:24:32 INFO  SettingsFactory:271 - Second-level cache: enabled
+2015-04-17 10:24:32 INFO  SettingsFactory:275 - Query cache: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-04-17 10:24:32 INFO  SettingsFactory:285 - Optimize cache for minimal puts: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:294 - Structured second-level cache entries: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:314 - Echoing all SQL to stdout
+2015-04-17 10:24:32 INFO  SettingsFactory:323 - Statistics: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+2015-04-17 10:24:32 INFO  SettingsFactory:343 - Default entity-mode: pojo
+2015-04-17 10:24:32 INFO  SettingsFactory:347 - Named query checking : enabled
+2015-04-17 10:24:32 INFO  SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015-04-17 10:24:32 INFO  SessionFactoryImpl:200 - building session factory
+2015-04-17 10:24:32 INFO  SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+2015-04-17 10:24:32 INFO  SchemaUpdate:155 - Running hbm2ddl schema update
+2015-04-17 10:24:32 INFO  SchemaUpdate:167 - fetching database metadata
+2015-04-17 10:24:32 INFO  SchemaUpdate:179 - updating schema
+2015-04-17 10:24:32 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:24:32 INFO  TableMetadata:65 - table found: treinamento.Conta
+2015-04-17 10:24:32 INFO  TableMetadata:66 - columns: [id, agencia, titular, numero]
+2015-04-17 10:24:32 INFO  TableMetadata:68 - foreign keys: []
+2015-04-17 10:24:32 INFO  TableMetadata:69 - indexes: [primary]
+2015-04-17 10:24:32 INFO  SchemaUpdate:217 - schema update complete
+2015-04-17 10:26:10 INFO  Version:37 - Hibernate Commons Annotations 3.2.0.Final
+2015-04-17 10:26:10 INFO  Environment:593 - Hibernate 3.6.0.Final
+2015-04-17 10:26:10 INFO  Environment:626 - hibernate.properties not found
+2015-04-17 10:26:10 INFO  Environment:804 - Bytecode provider name : javassist
+2015-04-17 10:26:10 INFO  Environment:685 - using JDK 1.4 java.sql.Timestamp handling
+2015-04-17 10:26:10 INFO  Version:42 - Hibernate EntityManager 3.6.0.Final
+2015-04-17 10:26:10 INFO  AnnotationBinder:532 - Binding entity from annotated class: Entidades.Conta
+2015-04-17 10:26:10 INFO  EntityBinder:519 - Bind entity Entidades.Conta on table Conta
+2015-04-17 10:26:10 INFO  Configuration:1646 - Hibernate Validator not found: ignoring
+2015-04-17 10:26:10 INFO  Version:56 - Hibernate Validator 4.0.2.GA
+2015-04-17 10:26:10 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:26:10 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:26:10 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:26:10 INFO  HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015-04-17 10:26:10 INFO  DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+2015-04-17 10:26:10 INFO  DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+2015-04-17 10:26:10 INFO  DriverManagerConnectionProvider:68 - autocommit mode: true
+2015-04-17 10:26:10 INFO  DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/treinamento
+2015-04-17 10:26:10 INFO  DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true, release_mode=auto}
+2015-04-17 10:26:10 INFO  SettingsFactory:117 - Database ->
+       name : MySQL
+    version : 5.5.41-0ubuntu0.14.04.1
+      major : 5
+      minor : 5
+2015-04-17 10:26:10 INFO  SettingsFactory:123 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015-04-17 10:26:10 INFO  Dialect:108 - Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2015-04-17 10:26:10 INFO  JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2015-04-17 10:26:10 INFO  TransactionFactoryFactory:62 - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2015-04-17 10:26:10 INFO  TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-04-17 10:26:10 INFO  SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:183 - Automatic session close at end of transaction: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:190 - JDBC batch size: 15
+2015-04-17 10:26:10 INFO  SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:198 - Scrollable result sets: enabled
+2015-04-17 10:26:10 INFO  SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+2015-04-17 10:26:10 INFO  SettingsFactory:214 - Connection release mode: auto
+2015-04-17 10:26:10 INFO  SettingsFactory:238 - Maximum outer join fetch depth: 2
+2015-04-17 10:26:10 INFO  SettingsFactory:241 - Default batch fetch size: 1
+2015-04-17 10:26:10 INFO  SettingsFactory:245 - Generate SQL with comments: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:249 - Order SQL updates by primary key: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:253 - Order SQL inserts for batching: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-04-17 10:26:10 INFO  ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+2015-04-17 10:26:10 INFO  SettingsFactory:261 - Query language substitutions: {}
+2015-04-17 10:26:10 INFO  SettingsFactory:266 - JPA-QL strict compliance: enabled
+2015-04-17 10:26:10 INFO  SettingsFactory:271 - Second-level cache: enabled
+2015-04-17 10:26:10 INFO  SettingsFactory:275 - Query cache: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015-04-17 10:26:10 INFO  SettingsFactory:285 - Optimize cache for minimal puts: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:294 - Structured second-level cache entries: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:314 - Echoing all SQL to stdout
+2015-04-17 10:26:10 INFO  SettingsFactory:323 - Statistics: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+2015-04-17 10:26:10 INFO  SettingsFactory:343 - Default entity-mode: pojo
+2015-04-17 10:26:10 INFO  SettingsFactory:347 - Named query checking : enabled
+2015-04-17 10:26:10 INFO  SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015-04-17 10:26:10 INFO  SessionFactoryImpl:200 - building session factory
+2015-04-17 10:26:10 INFO  SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+2015-04-17 10:26:10 INFO  SchemaUpdate:155 - Running hbm2ddl schema update
+2015-04-17 10:26:10 INFO  SchemaUpdate:167 - fetching database metadata
+2015-04-17 10:26:10 INFO  SchemaUpdate:179 - updating schema
+2015-04-17 10:26:10 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2015-04-17 10:26:11 INFO  TableMetadata:65 - table found: treinamento.Conta
+2015-04-17 10:26:11 INFO  TableMetadata:66 - columns: [id, agencia, titular, numero]
+2015-04-17 10:26:11 INFO  TableMetadata:68 - foreign keys: []
+2015-04-17 10:26:11 INFO  TableMetadata:69 - indexes: [primary]
+2015-04-17 10:26:11 INFO  SchemaUpdate:217 - schema update complete

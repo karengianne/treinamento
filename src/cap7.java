@@ -39,7 +39,6 @@ public class cap7 {
 		}
 	}*/
 	
-	/*ex4
 	public static void main(String[] args){
 		List<String> x = new ArrayList<String>();
 		x.add(" x");
@@ -53,5 +52,5 @@ public class cap7 {
 		for(String s : x){
 			System.out.println(s);			
 		}
-	}*/
+	}
 }

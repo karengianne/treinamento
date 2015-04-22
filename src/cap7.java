@@ -6,7 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.Set;
 import java.util.TreeSet;
+import java.util.Iterator;
 
 
 public class cap7 {
@@ -39,6 +41,7 @@ public class cap7 {
 		}
 	}*/
 	
+	//ex4
 	public static void main(String[] args){
 		List<String> x = new ArrayList<String>();
 		x.add(" x");
@@ -53,4 +56,18 @@ public class cap7 {
 			System.out.println(s);			
 		}
 	}
+	
+	/*ex6
+	public static void main(String[] args){
+		Set set = new TreeSet();
+		set.add("1");
+		set.add(2);
+		set.add("3");
+		
+		Iterator it = set.iterator();
+		while (it.hasNext()){
+			System.out.println(it.next() + " ");
+		}
+	}*/
+	
 }

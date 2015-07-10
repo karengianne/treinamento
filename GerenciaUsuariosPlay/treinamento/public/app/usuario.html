@@ -1,0 +1,248 @@
+<div class="container" ng-controller="UsuarioController"> 
+
+
+	<!-- Bloco referente ao cadastro de novo usuário -->
+	<div class="collapse" id="collapseNovoUsuario">
+	
+		<h4>Cadastrar Usuario</h4>
+
+		<div class="well well-large">
+			<div class="row">
+
+				<div class="dropdown col-md-6 ">
+					<label for="dropdownMenuCargos">Cargo:</label>
+
+					<div class="input-group">
+
+						<input type="text" class="form-control" id="dropdownMenuCargos" ng-model="cargoNovoUsuario.nome">
+
+						<div class="input-group-btn">
+
+							<button class="btn btn-default glyphicon glyphicon-menu-down" 
+								type="button" id="dropdownMenuCargos" data-toggle="dropdown">								
+												
+							</button>
+
+							<ul class="dropdown-menu dropdown-menu-right">
+
+								<li ng-repeat="cargo in cargos">
+									<a>{{ cargo.nome }}</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown col-md-6 ">
+
+					<label for="dropdownMenuPerfis">Perfil:</label>
+
+					<div class="input-group">
+
+						<input type="text" class="form-control" id="dropdownMenuPerfis" ng-model="perfilUsuario">
+
+						<div class="input-group-btn">						
+
+							<button class="btn btn-default glyphicon glyphicon-menu-down" 
+								type="button" id="dropdownMenuPerfis" data-toggle="dropdown">								
+												
+							</button>
+
+							<ul class="dropdown-menu dropdown-menu-right">
+
+								<li ng-repeat="perfil in perfis">
+									<a>{{ perfil.nome }}</a>
+								</li>
+							</ul>
+
+							<button class="btn btn-default glyphicon glyphicon-plus" type="button" id="addPerfil">								
+												
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<label for="inputNome">Nome:</label>
+			<input type="text" class="form-control" id="inputNome" ng-model="nomeUsuario">
+
+			<div class="row">
+
+				<div class="col-md-4 ">
+					<label for="inputCpf">Cpf:</label>
+					<input type="text" class="form-control" id="inputCpf" ng-model="cpfUsuario">
+				</div>
+
+				<div class="col-md-4 ">
+					<label for="inputNesc">Data de Nascimento:</label>
+					<input type="date" class="form-control" id="inputNesc" ng-model="nascUsuario">
+				</div>
+
+				<div class="col-md-4 ">
+
+					<label for="inputNesc">Sexo:</label>
+
+					<div class="input-group">
+
+						<input type="text" class="form-control" id="dropdownMenuSexo" ng-model="sexoUsuario">
+
+						<div class="input-group-btn">						
+
+							<button class="btn btn-default glyphicon glyphicon-menu-down" 
+								type="button" id="dropdownMenuSexo" data-toggle="dropdown">								
+												
+							</button>
+
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a>F</a></li>
+								<li><a>M</a></li>
+							</ul>						
+										
+						</div>
+					</div>
+
+				</div>
+
+				<button type="submit" class="btn btn-default pull-right" ng-click="insert()">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					Salvar
+				</button>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Bloco referente à pesquisa de usuário -->
+	<h4>Pesquisar Usuário</h4>
+
+	<div class="well well-large">
+
+		<div class="row">
+
+			<div class="dropdown col-md-6 ">
+
+				<label for="dropdownMenuCargos">Cargo:</label>
+				<div class="input-group">
+
+					<input type="text" class="form-control" id="inputPesquisaPorCargo" ng-model="cargoUsuario.nome">
+
+					<div class="input-group-btn">
+
+						<button class="btn btn-default glyphicon glyphicon-menu-down" 
+							type="button" id="dropdownMenuCargos" data-toggle="dropdown">								
+											
+						</button>
+
+						<ul class="dropdown-menu dropdown-menu-right">
+
+							<li ng-repeat="cargo in cargos">
+								<a ng-click="pesquisarPorCargo(cargo)">{{ cargo.nome }}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="dropdown col-md-6 ">
+
+				<label for="dropdownMenuPerfis">Perfil:</label>
+				<div class="input-group">
+
+					<input type="text" class="form-control" id="dropdownMenuPerfis" ng-model="perfilUsuario">
+
+					<div class="input-group-btn">
+					
+						<button class="btn btn-default glyphicon glyphicon-menu-down" 
+							type="button" id="dropdownMenuPerfis" data-toggle="dropdown">								
+											
+						</button>
+
+						<ul class="dropdown-menu dropdown-menu-right">
+
+							<li ng-repeat="perfil in perfis">
+								<a>{{ perfil.nome }}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+
+		<label for="inputBuscaUsuario">Nome:</label>
+
+		<div class="input-group">
+			<input type="text" class="form-control" id="inputBuscaUsuario" ng-model="nomeUsuario">
+
+			<span class="input-group-btn">
+				<button type="submit" class="btn btn-default" ng-click="">
+				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+				Pesquisar
+			</button>	
+			</span>
+
+		</div>
+
+	</div>
+
+	<div class="table-responsive">
+
+		<table class="table table-striped">
+
+			<thead>
+				<tr>
+
+					<th>
+						<h4>Usuários Cadastrados</h4>	
+					</th>
+
+					<th>
+						<button class="btn btn-primary pull-right" type="button" data-toggle="collapse" 
+							data-target="#collapseNovoUsuario" aria-controls="collapseNovoUsuario">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+							Novo
+						</button>
+					</th>
+				</tr>
+			</thead>
+
+			<tbody>		
+
+				<tr ng-repeat="usuario in usuarios">
+					<td>
+						{{ usuario.nome }}
+					</td>	
+
+					<td>
+						{{ usuario.cpf }}
+					</td>	
+
+					<td>		
+						<span class="alignRight">	
+							<button type="button" class="btn btn-default" data-toggle="collapse" 
+								data-target="#collapseEditaUsuario" ng-click="atualizar(usuario)">
+								<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+								Editar
+							</button>
+							<button type="button" class="btn btn-danger" ng-click="delete(usuario.id)">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+								Excluir
+							</button>
+							<button type="button" class="btn btn-info" ng-click="delete(usuario.id)">
+								<span class="glyphicon glyphicon-glyphicon-search" aria-hidden="true"></span>
+								Ver
+							</button>
+						</span>
+					</td>
+				</tr>
+			</tbody>	
+
+		</table>
+	</div>
+
+		
+
+</div>

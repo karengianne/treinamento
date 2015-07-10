@@ -1,0 +1,73 @@
+.tituloth {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:23px;
+	color:#337ab7;
+	margin-left: 0px;	
+	font-weight: bold;
+}
+
+.titulo {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:23px;
+	color:#337ab7;
+	padding: 8px;
+	font-weight: bold;
+}
+
+.titulo-page {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:35px;
+	color:#337ab7;
+	padding: 8px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.alignRight {
+	float: right;
+}
+
+.jumbotron-smaller{
+	padding-bottom: 5px;
+	padding-top: 35px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	background-color: #000
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #BBB;
+}
+
+a {
+	color: #fff
+}
+
+.hrhorizontal {
+	border-top: 3px solid #eee;
+}
+
+.hrvertical {
+	width:2px;
+	height:10px;
+	background-color:#FFF;
+	position:absolute;
+}
+
+.navbar .divider-vertical {
+	height: 50px;
+	margin: 0 9px;
+	border-right: 1px solid #BBB;
+	border-left: 1px solid #BBB;
+}
+
+.col-md-11-tam {
+	width: 95%;
+}
+
+.col-md-1-tam {
+	width: 5%;
+}
